@@ -23,13 +23,13 @@ public class AddonTemplate extends MeteorAddon {
         LOG.info("Initializing Meteor Addon Template");
 
         // Modules
-        Modules.get().add(new ModuleExample());
+        Modules.get().add(new com.example.addon.modules.RiggedDrop());
 
         // Commands
         Commands.add(new CommandExample());
 
         // HUD
-        Hud.get().register(HudExample.INFO);
+        Hud.get().register(com.example.addon.hud.RiggedHud.INFO);
     }
 
     @Override
